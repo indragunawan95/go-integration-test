@@ -1,0 +1,1 @@
+generate-proto: protoc --go_out=./proto --go-grpc_out=./proto ./user.proto

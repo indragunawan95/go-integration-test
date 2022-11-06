@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package user;
+option go_package = "integration-test/user";
+
+service UserService {
+    rpc CreateUser(User) returns (User); 
+}
+
+
+message User{
+    string id = 1;
+    string name = 2;
+}
